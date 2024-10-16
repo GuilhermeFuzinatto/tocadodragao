@@ -1,0 +1,9 @@
+html{
+    background-image: url(imagens/mesa.jpg);
+    margin: 5px;
+}
+
+body{
+    background-image: url(imagens/pergaminho2.png);
+    height: 10000px;
+}
