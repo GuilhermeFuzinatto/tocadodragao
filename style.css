@@ -4,12 +4,16 @@ html{
     background-size: cover;
 }
 
-body{
-    background-image: url(imagens/pergaminho6.png);
-    height: 7000px;
-    background-repeat: repeat-y;
+.pergaminho{
+    position: absolute;
+    width: 1500px;
+    left: 10%;
+    top: 15%;
+    z-index: 1;
 }
 
 .rolao1{
     width: 1900px;
+    position: absolute;
+    z-index: 2;
 }
