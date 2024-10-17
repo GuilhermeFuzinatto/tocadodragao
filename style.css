@@ -1,8 +1,15 @@
 html{
     background-image: url(imagens/mesa.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
 }
 
 body{
-    background-image: url(imagens/pergaminho7.png);
+    background-image: url(imagens/pergaminho6.png);
     height: 7000px;
+    background-repeat: repeat-y;
+}
+
+.rolao1{
+    width: 1900px;
 }
