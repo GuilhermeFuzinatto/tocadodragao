@@ -1,14 +1,4 @@
-@font-face{
-    font-family: Obra Letra;
-    src: url(KCObraLetraBold.ttf);
-}
-
-*{
-    font-family: Obra Letra;
-}
-
 html{
-    color: #5a1010;
     background-image: url(imagens/mesa.jpg);
     background-repeat: repeat-y;
     background-size: cover;
@@ -28,52 +18,3 @@ html{
     z-index: 2;
 }
 
-.bnv{
-    width: 700px;
-    left: 20%;
-    top: 20%;
-    position: absolute;
-    z-index: 3;
-}
-.hst{
-    width: 700px;
-    right: 20%;
-    top: 90%;
-    position: absolute;
-    z-index: 3;
-}
-.prncs{
-    width: 400px;
-    left: 20%;
-    top: 90%;
-    position: absolute;
-    z-index: 3;
-}
-
-.tcadrg{
-    width: 400px;
-    right: 20%;
-    top: 20%;
-    position: absolute;
-    z-index: 4;
-}
-
-.inpt{
-    left: 20%;
-    top: 20%;
-    position: absolute;
-    z-index: 3;
-}
-input{
-    font-size: 30px;
-    background: none;
-    border: none;
-    border-bottom: 2px solid #5a1010;
-    width: 350px;
-    height: 40px;
-    outline: 0;
-}
-
-::placeholder{
-    font-size: 30px;
-}
