@@ -1,5 +1,5 @@
 @font-face {
-    font-family: CarvingSoft;
+    font-family: Obra Letra;
     src: url(fontes/KCObraLetraBold.ttf);
 }
 
@@ -23,13 +23,13 @@ html{
     z-index: 2;
 }
 
-.titulo{
+.cdtitle{
     position: absolute;
     z-index: 3;
     top: 20%;
     left: 50%;
     transform: translate(-50%);
-    font-family: CarvingSoft;
+    font-family: Obra Letra;
     font-size: 500%;
     border-bottom: 5px solid #bb2020;
 }
@@ -40,7 +40,7 @@ html{
     top: 45%;
     left: 50%;
     transform: translate(-50%);
-    font-family: CarvingSoft;
+    font-family: Obra Letra;
     font-size: 300%;
     border-bottom: 3px solid #bb2020;
 }
