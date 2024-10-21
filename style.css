@@ -106,3 +106,33 @@ nav{
     position: absolute;
     top: 180%;
 }
+
+.lanchaotop{
+    width: 20%;
+    border-radius: 15%;
+    position: absolute;
+    top: -10%;
+    left: 2.5%;
+}
+
+.lanchaotop2{
+    width: 20%;
+    border-radius: 15%;
+    position: absolute;
+    top: -10%;
+    left: 27.5%;
+}
+.lanchaotop3{
+    width: 20%;
+    border-radius: 15%;
+    position: absolute;
+    top: -10%;
+    right: 27.5%;
+}
+.lanchaotop4{
+    width: 20%;
+    border-radius: 15%;
+    position: absolute;
+    top: -10%;
+    right: 2.5%;
+}
