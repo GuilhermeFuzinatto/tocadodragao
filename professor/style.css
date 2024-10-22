@@ -1,0 +1,238 @@
+/* Fontes personalizadas */
+@font-face {
+    font-family: 'medtitle';
+    src: url('fontes/Augusta.ttf');
+}
+
+@font-face {
+    font-family: 'medtxt';
+    src: url('fontes/Teutonic.ttf');
+}
+
+/* Estilo Global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('imagens/mesa.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header */
+header {
+    background-color: #fbe9cc;
+    text-align: center;
+    padding: 20px;
+}
+.logo {
+    width: 50%;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.logo:hover {
+    filter: brightness(1.5) drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+    transform: scale(1.05); /* Leve aumento no tamanho para dar destaque */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fbe9cc;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.sobre {
+    text-align: center;
+    background-color: rgba(251, 233, 204, 0.7);
+    padding: 50px 20px;
+}
+
+.fraselegal {
+    font-family: 'medtitle';
+    font-size: 3em;
+    color: #9b0d20;
+}
+
+.destaque {
+    color: #f00;
+}
+/* Especialidades */
+
+.especialidades {
+    color: #fbe9cc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção */
+    padding: 20px;
+}
+
+.quadrant {
+    flex: 1 1 45%; /* Flexível, ocupando 45% da largura do container */
+    box-sizing: border-box;
+    margin: 10px; /* Espaço entre os quadrantes */
+    text-align: center; /* Centraliza o texto */
+}
+
+.quadrant-image {
+    width: 100%; /* Imagem ocupa 100% da largura do quadrante */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Arredonda os cantos das imagens */
+    filter: invert(1);
+}
+
+
+
+/* Cardápio */
+.cardapio {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4e3d7;
+}
+
+.esp {
+    font-family: 'medtitle';
+    font-size: 3em;
+    border-bottom: 5px solid #9b0d20;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.menu-items .item {
+    background-color: #fff;
+    border: 2px solid #9b0d20;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.menu-items .item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-items .item h3 {
+    font-family: 'medtitle';
+    color: #9b0d20;
+    margin: 15px 0;
+}
+
+.menu-items .item p {
+    font-size: 1em;
+}
+
+.preco {
+    font-size: 1.5em;
+    color: #9b0d20;
+}
+
+.detalhes-btn {
+    background-color: #9b0d20;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Localização */
+.localizacao {
+    padding: 50px;
+    text-align: center;
+    color: #f4e3d7;
+}
+
+.locmaps {
+    width: 80%;
+    height: 300px;
+    border: 0;
+    margin: 20px 0;
+}
+
+/* Contato */
+.contato {
+    padding: 30px;
+    background-color: #fbe9cc;
+    text-align: center;
+}
+
+footer {
+    background-color: #9b0d20;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* teste */
+
+
+.explosion {
+    padding: 15px;
+    font-size: 20px;
+    color: #9b0d20;;
+/*     background-color: #9b0d20;
+ */    border-radius: 8px;
+    text-align: center;
+    position: relative; /* Necessário para posicionar os pseudoelementos */
+    overflow: hidden; /* Garante que os efeitos não saiam do elemento */
+    transition: transform 0.3s ease; /* Transição suave para transformação */
+}
+
+.explosion:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do elemento quando hover */
+}
+
+.explosion:before,
+.explosion:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(129, 41, 41, 0) 40%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 60%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Começa invisível */
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transições suaves */
+}
+
+.explosion:hover:before,
+.explosion:hover:after {
+    transform: translate(-50%, -50%) scale(1); /* Expande o efeito ao passar o mouse */
+    opacity: 1; /* Torna o efeito visível */
+    animation: pop 0.5s forwards; /* Animação de "explosão" */
+}
+
+@keyframes pop {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0; /* Faz desaparecer ao final */
+    }
+}
