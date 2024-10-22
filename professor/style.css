@@ -82,16 +82,16 @@ nav ul li a {
 }
 
 .quadrant {
-    flex: 1 1 45%; /* Flexível, ocupando 45% da largura do container */
+    flex: 1 1 45%; 
     box-sizing: border-box;
-    margin: 10px; /* Espaço entre os quadrantes */
-    text-align: center; /* Centraliza o texto */
+    margin: 10px; 
+    text-align: center; 
 }
 
 .quadrant-image {
-    width: 100%; /* Imagem ocupa 100% da largura do quadrante */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Arredonda os cantos das imagens */
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
     filter: invert(1);
 }
 
