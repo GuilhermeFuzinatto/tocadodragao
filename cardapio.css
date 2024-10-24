@@ -1,0 +1,162 @@
+@font-face {
+    font-family: medtitle;
+    src: url(fontes/Augusta.ttf);
+}
+
+@font-face {
+    font-family: medtxt;
+    src: url(fontes/Teutonic.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(imagens/mesa.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    background-color: #fbe9cc;
+}
+
+.logo{
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+nav{
+    background-color: #9b0d20;
+    max-height: 49.7px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+nav ul li {
+    display: inline;
+    color: white;
+    font-family: medtxt;
+    font-size: 150%;
+    margin: 0.8%;
+}
+
+nav ul li:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.cardiv{
+    text-align: center;
+}
+
+.cartitle{
+    width: 100%;
+    margin-top: 7%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-size: 700%;
+    color: white;
+    font-family: medtitle;
+}
+
+.fundo{
+    background-color: #fbe9cc;
+    margin-top: 8%;
+}
+
+.car1{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    width: 40%;
+}
+
+.car1 h1{
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-family: medtitle;
+    font-size: 500%;
+    border-bottom: 5px solid #9b0d20;
+    text-align: center;
+    width: 90%;
+}
+
+.prato{
+    margin-bottom: 30px;
+}
+
+.prato h2{
+    font-family: medtitle;
+    font-size: 300%;
+    line-height: 0;
+}
+
+.prato p{
+    font-family: medtxt;
+    font-size: 200%;
+    line-height: 20px;;
+}
+
+footer{
+    padding: 2.5%;
+    color: white;
+    background-color: #9b0d20;
+    font-family: 'Lucida Sans';
+}
+
+.redes{
+    margin-top: 0;
+}
+
+.redes img{
+    width: 2%;
+}
+
+.redes p{
+    position: absolute;
+    left: 5%;
+    top: 508%;
+    font-size: 140%;
+}
+
+.redes p:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.cont img{
+    width: 2%;
+}
+
+.cont p{
+    position: absolute;
+    left: 5%;
+    top: 513%;
+    font-size: 130%;
+}
+
+.logo2{
+    position: absolute;
+    top: 492.5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15%;
+}
+
+.cr{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
