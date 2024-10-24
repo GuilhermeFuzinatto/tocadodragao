@@ -1,0 +1,159 @@
+@font-face {
+    font-family: medtitle;
+    src: url(fontes/Augusta.ttf);
+}
+
+@font-face {
+    font-family: medtxt;
+    src: url(fontes/Teutonic.ttf);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(imagens/mesa.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    background-color: #fbe9cc;
+}
+
+.logo{
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+nav{
+    background-color: #9b0d20;
+    max-height: 49.7px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+nav ul li {
+    display: inline;
+    color: white;
+    font-family: medtxt;
+    font-size: 150%;
+    margin: 0.8%;
+}
+
+nav ul li:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer{
+    padding: 2.5%;
+    color: white;
+    background-color: #9b0d20;
+    font-family: 'Lucida Sans';
+}
+
+.redes{
+    margin-top: 0;
+}
+
+.redes img{
+    width: 2%;
+}
+
+.redes p{
+    position: absolute;
+    left: 5%;
+    top: 508%;
+    font-size: 140%;
+}
+
+.redes p:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.cont img{
+    width: 2%;
+}
+
+.cont p{
+    position: absolute;
+    left: 5%;
+    top: 513%;
+    font-size: 130%;
+}
+
+.logo2{
+    position: absolute;
+    top: 492.5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15%;
+}
+
+.cr{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.perg{
+    width: 35%;
+    height: 650px;
+    margin-top: 4%;
+    margin-left: 10%;
+    transform: translate(-50%);
+    transform: rotate(90deg);
+}
+
+.rolao1{
+    position: absolute;
+    margin-top: 2%;
+    top: 40%;
+    left: 5%;
+    transform: rotate(0deg);
+    height: 90px;
+}
+
+.rolao2{
+    position: absolute;
+    top: 120%;
+    left: 5%;
+    transform: rotate(0deg);
+    height: 90px;
+}
+.bnv{
+    font-family: medtxt;
+    font-size: 225%;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    width: 30%;
+}
+
+input{
+    width: 350px;
+    height: 50px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 4px solid #9b0d20;
+    font-size: 25px;
+}
+input:hover{
+    scale: 1.1;
+    transition: 0.25s;
+}
+::placeholder{
+    font-size: 25px;
+}
