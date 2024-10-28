@@ -73,13 +73,20 @@ nav ul li a{
 .fundo{
     background-color: #fbe9cc;
     margin-top: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.classificacao{
+    width: 100%;
 }
 
 .car1{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 5%;
     width: 40%;
+    justify-content: space-between;
 }
 
 .car1 h1{
@@ -106,7 +113,25 @@ nav ul li a{
 .prato p{
     font-family: medtxt;
     font-size: 200%;
-    line-height: 20px;;
+    line-height: 30px;
+}
+
+.car2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.car2 h1{
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-family: medtitle;
+    font-size: 500%;
+    border-bottom: 5px solid #9b0d20;
+    text-align: center;
+    width: 90%;
 }
 
 footer{
