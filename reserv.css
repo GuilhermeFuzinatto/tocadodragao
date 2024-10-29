@@ -61,19 +61,55 @@ nav ul li a{
     color: white;
 }
 footer{
-    text-align: center;
     color: white;
     background-color: #9b0d20;
     font-family: 'Lucida Sans';
 }
-footer img{
-    width: 50px;
+
+.foofighters{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 2.5%;
+    justify-content: space-around;
 }
-footer p{
-    font-size: 20px;
+
+.contatos{
+    width: 30%;
+    text-align: center;
 }
-.logo2{
-    width: 500px;
+
+.contatos h1{
+    font-size: 200%;
+}
+
+.contatos img{
+    width: 8%;
+}
+
+.insta:hover{
+    scale: 110%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.zap:hover{
+    scale: 110%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.direitos{
+    width: 30%;
+    text-align: center;
+}
+
+.direitos img{
+    width: 50%;
+}
+
+.devs{
+    width: 30%;
 }
 .box_mae{
     display: flex;
