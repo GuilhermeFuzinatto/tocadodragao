@@ -16,6 +16,11 @@ body{
     background-attachment: fixed;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 header{
     background-color: #fbe9cc;
 }
@@ -32,9 +37,11 @@ nav{
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 10%;
 }
 
@@ -78,6 +85,12 @@ nav ul li a{
     justify-content: space-around;
 }
 
+.linha{
+    border-left: 5px solid #9b0d20;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .classificacao{
     width: 100%;
 }
@@ -107,13 +120,14 @@ nav ul li a{
 .prato h2{
     font-family: medtitle;
     font-size: 300%;
-    line-height: 0;
+    margin-bottom: 0;
 }
 
 .prato p{
     font-family: medtxt;
     font-size: 200%;
     line-height: 30px;
+    margin-top: 0;
 }
 
 .car2{
@@ -135,53 +149,53 @@ nav ul li a{
 }
 
 footer{
-    padding: 2.5%;
     color: white;
     background-color: #9b0d20;
     font-family: 'Lucida Sans';
 }
 
-.redes{
-    margin-top: 0;
+.foofighters{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 2.5%;
+    justify-content: space-around;
 }
 
-.redes img{
-    width: 2%;
+.contatos{
+    width: 30%;
+    text-align: center;
 }
 
-.redes p{
-    position: absolute;
-    left: 5%;
-    top: 508%;
-    font-size: 140%;
+.contatos h1{
+    font-size: 200%;
 }
 
-.redes p:hover{
-    border-bottom: 1px solid white;
+.contatos img{
+    width: 8%;
+}
+
+.insta:hover{
+    scale: 110%;
     cursor: pointer;
+    transition: 0.5s;
 }
 
-.cont img{
-    width: 2%;
+.zap:hover{
+    scale: 110%;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.cont p{
-    position: absolute;
-    left: 5%;
-    top: 513%;
-    font-size: 130%;
+.direitos{
+    width: 30%;
+    text-align: center;
 }
 
-.logo2{
-    position: absolute;
-    top: 492.5%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 15%;
+.direitos img{
+    width: 50%;
 }
 
-.cr{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+.devs{
+    width: 30%;
 }

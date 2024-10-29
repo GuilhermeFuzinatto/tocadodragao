@@ -16,6 +16,11 @@ body{
     background-attachment: fixed;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 header{
     background-color: #fbe9cc;
 }
@@ -313,7 +318,6 @@ nav ul li a{
     font-family: medtitle;
     font-size: 500%;
     text-align: center;
-    width: 90%;
 }
 
 .locmaps{
@@ -334,52 +338,45 @@ footer{
 .foofighters{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     height: 100%;
     padding: 2.5%;
+    justify-content: space-around;
 }
 
-.redes{
-    margin-top: 0;
+.contatos{
+    width: 30%;
+    text-align: center;
 }
 
-.redes img{
-    width: 2%;
+.contatos h1{
+    font-size: 200%;
 }
 
-.redes p{
-    position: absolute;
-    left: 5%;
-    top: 508%;
-    font-size: 140%;
+.contatos img{
+    width: 8%;
 }
 
-.redes p:hover{
-    border-bottom: 1px solid white;
+.insta:hover{
+    scale: 110%;
     cursor: pointer;
+    transition: 0.5s;
 }
 
-.cont img{
-    width: 2%;
+.zap:hover{
+    scale: 110%;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.cont p{
-    position: absolute;
-    left: 5%;
-    top: 513%;
-    font-size: 130%;
+.direitos{
+    width: 30%;
+    text-align: center;
 }
 
-.logo2{
-    position: absolute;
-    top: 492.5%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 15%;
+.direitos img{
+    width: 50%;
 }
 
-.cr{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+.devs{
+    width: 30%;
 }
