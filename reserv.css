@@ -8,21 +8,22 @@
     src: url(fontes/Teutonic.ttf);
 }
 
+*{
+    margin: 0;
+}
 
 body{
-    margin: 0;
     padding: 0;
     background-image: url(imagens/mesa.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
-header{
-    background-color: #fbe9cc;
+main{
+    margin: 100px;
 }
-
-.logo{
-    margin-left: 50%;
-    transform: translate(-50%);
+header{
+    text-align: center;
+    background-color: #fbe9cc;
 }
 
 nav{
@@ -46,6 +47,10 @@ nav ul li {
     margin: 0.8%;
 }
 
+.logo{
+    width: 300px;
+}
+
 nav ul li:hover{
     border-bottom: 1px solid white;
     cursor: pointer;
@@ -56,92 +61,42 @@ nav ul li a{
     color: white;
 }
 footer{
-    padding: 2.5%;
+    text-align: center;
     color: white;
     background-color: #9b0d20;
     font-family: 'Lucida Sans';
 }
-
-.redes{
-    margin-top: 0;
+footer img{
+    width: 50px;
 }
-
-.redes img{
-    width: 2%;
+footer p{
+    font-size: 20px;
 }
-
-.redes p{
-    position: absolute;
-    left: 5%;
-    top: 508%;
-    font-size: 140%;
-}
-
-.redes p:hover{
-    border-bottom: 1px solid white;
-    cursor: pointer;
-}
-
-.cont img{
-    width: 2%;
-}
-
-.cont p{
-    position: absolute;
-    left: 5%;
-    top: 513%;
-    font-size: 130%;
-}
-
 .logo2{
-    position: absolute;
-    top: 492.5%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 15%;
+    width: 500px;
 }
+.box_mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    z-index: 1;
+    text-align: center;
+    margin: 50px;
+    width: 500px;
+    height: 700px;
+    border-radius: 5px;
 
-.cr{
+}
+.fundo_card{
     position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    z-index: 0;
+    width: 1500px;
+    height: 800px;
 }
-
-.perg{
-    width: 35%;
-    height: 650px;
-    margin-top: 4%;
-    margin-left: 10%;
-    transform: translate(-50%);
-    transform: rotate(90deg);
-}
-
-.rolao1{
-    position: absolute;
-    margin-top: 2%;
-    top: 40%;
-    left: 5%;
-    transform: rotate(0deg);
-    height: 90px;
-}
-
-.rolao2{
-    position: absolute;
-    top: 120%;
-    left: 5%;
-    transform: rotate(0deg);
-    height: 90px;
-}
-.bnv{
-    font-family: medtxt;
-    font-size: 225%;
-    position: absolute;
-    top: 50%;
-    left: 18%;
-    width: 30%;
-}
-
 input{
+    margin: 10px;
     width: 350px;
     height: 50px;
     border: none;
@@ -150,10 +105,27 @@ input{
     border-bottom: 4px solid #9b0d20;
     font-size: 25px;
 }
-input:hover{
-    scale: 1.1;
-    transition: 0.25s;
-}
+
 ::placeholder{
     font-size: 25px;
+}
+
+.ctt{
+    position: absolute;
+}
+
+button {
+    background-color: beige;
+    color: #cd3232;
+    box-shadow: #cd3232 0px 0px 0px 4px;
+    border: none;
+    height: 50px;
+    width: 280px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+button:hover{
+    transition: 0.10s;
+    cursor: pointer;
+    background-color: darkred;
 }
