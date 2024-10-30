@@ -30,6 +30,11 @@ header{
     transform: translate(-50%);
 }
 
+.logo:hover{
+    opacity: 85%;
+    transition: 0.5s;
+}
+
 nav{
     background-color: #9b0d20;
     max-height: 49.7px;
@@ -80,40 +85,23 @@ nav ul li a{
 }
 
 .perg{
-    padding: 0;
-
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
 }
 
-.pergimg{
+.pergaminho{
+    display: flex;
     width: 80%;
-    height: 650px;
-    margin-top: 2%;
-    margin-left: 50%;
-    transform: translate(-50%);
+    height: 750px;
+    align-items: center;
     z-index: 1;
 }
 
-.pergtxt{
-    font-family: medtxt;
-    font-size: 225%;
-    margin-top: 0;
-    z-index: 2;
-}
-
-.rolao1{
-    position: absolute;
-    top: 87.5%;
-    left: 6%;
-    height: 95%;
-    z-index: 2;
-}
-
-.rolao2{
-    position: absolute;
-    top: 87.5%;
-    right: 6%;
-    height: 95%;
-    z-index: 2;
+.pergaminho img{
+    width: 100%;
+    height: 650px;
 }
 
 .bnv{
@@ -121,6 +109,9 @@ nav ul li a{
     position: absolute;
     top: 105%;
     left: 15%;
+    font-family: medtxt;
+    font-size: 225%;
+    margin-top: 2%;
 }
 
 .hst{
@@ -128,6 +119,34 @@ nav ul li a{
     position: absolute;
     top: 105%;
     right: 15%;
+    font-family: medtxt;
+    font-size: 225%;
+    margin-top: 2%;
+}
+
+
+.rolao1{
+    display: flex;
+    z-index: 2;
+    height: 750px;
+    align-items: center;
+    transform: translate(20%);
+}
+
+.rolao1 img{
+    height: 110%;
+}
+
+.rolao2{
+    display: flex;
+    z-index: 2;
+    height: 750px;
+    align-items: center;
+    transform: translate(-20%);
+}
+
+.rolao2 img{
+    height: 110%;
 }
 
 .fundo{
@@ -138,69 +157,26 @@ nav ul li a{
 .comidas{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.lanchaotop{
-    margin-top: -4%;
-    margin-left: 4%;
+.comidas img{
+    margin-top: -5%;
     margin-bottom: 4%;
-    width: 20%;
+    width: 15%;
     border-radius: 15%;
     filter: grayscale(50%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 25%);
 }
 
-.lanchaotop:hover{
+.comidas img:hover{
     filter: grayscale(0%);
     scale: 110%;
     transition: 0.5s;
+    -webkit-mask-image: none;
 }
 
-.lanchaotop2{
-    margin-top: -4%;
-    margin-left: 4%;
-    margin-bottom: 4%;
-    width: 20%;
-    border-radius: 15%;
-    filter: grayscale(50%);
-}
-
-.lanchaotop2:hover{
-    filter: grayscale(0%);
-    scale: 110%;
-    transition: 0.5s;
-}
-
-.lanchaotop3{
-    margin-top: -4%;
-    margin-left: 4%;
-    margin-bottom: 4%;
-    width: 20%;
-    border-radius: 15%;
-    filter: grayscale(50%);
-}
-
-.lanchaotop3:hover{
-    filter: grayscale(0%);
-    scale: 110%;
-    transition: 0.5s;
-}
-
-.lanchaotop4{
-    margin-top: -4%;
-    margin-left: 4%;
-    margin-bottom: 4%;
-    width: 20%;
-    border-radius: 15%;
-    filter: grayscale(50%);
-}
-
-.lanchaotop4:hover{
-    filter: grayscale(0%);
-    scale: 110%;
-    transition: 0.5s;
-}
-
-.esp{
+.esptitle{
     margin-top: 5%;
     margin-left: 50%;
     transform: translate(-50%);
@@ -211,107 +187,100 @@ nav ul li a{
     width: 90%;
 }
 
-.churras{
-    margin-top: 5%;
-    margin-left: 5%;
+.especialidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.especialidades div{
     width: 40%;
+}
+
+.churras{
+    margin-left: 5%;
     text-align: center;
 }
 
-.churrastitle{
+.churras h1{
     font-family: medtitle;
     font-size: 400%;
 }
 
-.churrastxt{
+.churras p{
     font-family: medtxt;
     font-size: 300%;
 }
 
 .carnes{
-    position: absolute;
-    right: 5%;
-    top: 270%;
+    margin-top: 4%;
+    margin-right: 10%;
+}
+
+.drinks{
+    margin-top: 4%;
+    margin-left: 5%;
 }
 
 .mix{
-    margin-top: 5%;
-    margin-left: 53%;
-    width: 40%;
+    margin-right: 5%;
     text-align: center;
 }
 
-.mixtitle{
+.mix h1{
     font-family: medtitle;
     font-size: 400%;
 }
 
-.mixtxt{
+.mix p{
     font-family: medtxt;
     font-size: 300%;
 }
 
-.drinks{
-    position: absolute;
-    left: 10%;
-    top: 327.5%;
-    width: 32.5%;
+.bandeiras{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin-top: 10%;
 }
 
-.vcar{
-    position: absolute;
-    top: 385%;
-    left: 6.5%;
-    background-color: #9b0d20;
-    height: 230px;
+.botoes{
     width: 40%;
-    border-radius: 50px;
+}
+
+.botoes div{
+    background-image: url(imagens/bandeira.png);
+    background-size: cover;
+    width: 100%;
+    height: 265px;
     text-align: center;
     align-content: center;
-}
-
-.vcar:hover{
-    scale: 110%;
-    background-color: #c41229;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.vcartxt{
     color: white;
-    width: 100%;
     font-family: medtitle;
-    font-size: 400%;
+    font-size: 250%;
+    margin-bottom: 5%;
 }
 
-.fres{
-    position: absolute;
-    top: 385%;
-    right: 6.5%;
-    background-color: #9b0d20;
-    height: 230px;
+.botoes div:hover{
+    filter: brightness(120%);
+    scale: 110%;
+    transition: 0.5s;
+}
+
+.dragao{
     width: 40%;
-    border-radius: 50px;
     text-align: center;
-    align-content: center;
 }
 
-.fres:hover{
+.dragao img{
     scale: 110%;
-    background-color: #c41229;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.frestxt{
-    color: white;
-    width: 100%;
-    font-family: medtitle;
-    font-size: 400%;
 }
 
 .loctitle{
-    margin-top: 30%;
+    margin-top: 10%;
     margin-left: 50%;
     margin-bottom: 0;
     transform: translate(-50%);

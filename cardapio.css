@@ -30,6 +30,11 @@ header{
     transform: translate(-50%);
 }
 
+.logo:hover{
+    opacity: 85%;
+    transition: 0.5s;
+}
+
 nav{
     background-color: #9b0d20;
     max-height: 49.7px;
