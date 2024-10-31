@@ -93,37 +93,23 @@ nav ul li a{
 
 .pergaminho{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 80%;
     height: 750px;
     align-items: center;
     z-index: 1;
+    background-image: url(imagens/pergaminhobom4.png);
+    background-size: 100% 650px;
+    background-repeat: no-repeat;
+    background-position-y: center;
 }
 
-.pergaminho img{
-    width: 100%;
-    height: 650px;
-}
-
-.bnv{
-    width: 30%;
-    position: absolute;
-    top: 105%;
-    left: 15%;
+.pergaminho div{
+    width: 40%;
     font-family: medtxt;
     font-size: 225%;
-    margin-top: 2%;
 }
-
-.hst{
-    width: 30%;
-    position: absolute;
-    top: 105%;
-    right: 15%;
-    font-family: medtxt;
-    font-size: 225%;
-    margin-top: 2%;
-}
-
 
 .rolao1{
     display: flex;
