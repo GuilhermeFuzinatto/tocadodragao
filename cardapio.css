@@ -204,3 +204,17 @@ footer{
 .devs{
     width: 30%;
 }
+
+.devs{
+    width: 30%;
+    text-align: center;
+}
+
+.devs h1{
+    font-size: 200%;
+}
+
+.devs img{
+    width: 8%;
+}
+
