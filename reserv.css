@@ -172,10 +172,10 @@ main{
     border: 2px solid #9b0d20;
     border-radius: 5px;
     font-family: medtxt;
-    font-size: 200%;
+    font-size: 130%;
     margin-right: 5%;
     margin-bottom: 5%;
-    max-width: 22%;
+    max-width: 14%;
     justify-content: center;
 }
 
@@ -213,6 +213,36 @@ main{
 
 .rolao2 img{
     height: 110%;
+}
+
+.bandeira{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.botao{
+    background-image: url(imagens/bandeira.png);
+    background-size: cover;
+    width: 40%;
+    height: 280px;
+    min-width: 40%;
+    min-height: 265px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-family: medtitle;
+    font-size: 250%;
+    margin-bottom: 5%;
+}
+
+.botao:hover{
+    filter: brightness(120%);
+    scale: 110%;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 footer{

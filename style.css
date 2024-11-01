@@ -121,6 +121,7 @@ nav ul li a{
 
 .rolao1 img{
     height: 110%;
+    transform: rotate(180deg);
 }
 
 .rolao2{
@@ -151,7 +152,6 @@ nav ul li a{
     margin-bottom: 4%;
     width: 15%;
     border-radius: 15%;
-    filter: grayscale(50%);
     -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 25%);
 }
 
