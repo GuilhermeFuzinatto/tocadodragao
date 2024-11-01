@@ -227,7 +227,7 @@ main{
     background-image: url(imagens/bandeira.png);
     background-size: cover;
     width: 40%;
-    height: 280px;
+    height: 270px;
     min-width: 40%;
     min-height: 265px;
     text-align: center;
@@ -235,7 +235,6 @@ main{
     color: white;
     font-family: medtitle;
     font-size: 250%;
-    margin-bottom: 5%;
 }
 
 .botao:hover{

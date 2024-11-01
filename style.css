@@ -241,9 +241,8 @@ nav ul li a{
     background-image: url(imagens/bandeira.png);
     background-size: cover;
     width: 100%;
-    height: 265px;
+    height: 255px;
     min-width: 100%;
-    min-height: 265px;
     text-align: center;
     align-content: center;
     color: white;
