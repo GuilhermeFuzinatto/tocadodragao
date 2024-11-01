@@ -114,15 +114,16 @@ main{
     width: 30%;
 }
 
-.pergaminho div div{
+.info1 div{
     width: 100%;
 }
 
-.pergaminho div div h1{
+.info1 div h1{
     font-size: 250%;
+    font-family: medtitle;
 }
 
-.pergaminho div div input{
+.info1 div input{
     border: none;
     border-bottom: 2px solid #9b0d20;
     background-color: inherit;
@@ -131,12 +132,63 @@ main{
     width: 100%;
 }
 
-.pergaminho div div input:focus{
+.info1 div input:focus{
     outline: none;
 }
 
-.label{
+.info2 div{
+    width: 100%;
+}
+
+.info2 div h1{
+    font-size: 250%;
     font-family: medtitle;
+}
+
+.info2 div input{
+    border: none;
+    border-bottom: 2px solid #9b0d20;
+    background-color: inherit;
+    font-family: medtxt;
+    font-size: 200%;
+    width: 100%;
+}
+
+.info2 div input:focus{
+    outline: none;
+}
+
+.horarios{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+.horarios h1{
+    width: 100%;
+}
+
+.hora{
+    border: 2px solid #9b0d20;
+    border-radius: 5px;
+    font-family: medtxt;
+    font-size: 200%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    max-width: 22%;
+    justify-content: center;
+}
+
+.hora:hover{
+    background-color: #9b0d20;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.hora:focus{
+    background-color: #9b0d20;
+    color: white;
 }
 
 .rolao1{
