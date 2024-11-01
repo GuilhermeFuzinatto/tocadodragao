@@ -32,7 +32,7 @@ header{
 
 .logo:hover{
     opacity: 85%;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
 }
 
 nav{
@@ -284,6 +284,75 @@ nav ul li a{
     border-bottom: 5px solid #9b0d20;
     border-right: 0;
     border-left: 0;
+}
+
+.avaltitle{
+    font-family: medtitle;
+    color: white;
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-family: medtitle;
+    font-size: 500%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.avalcards{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.aval{
+    background-color: #fbe9cc;
+    width: 30%;
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 50px
+}
+
+.icon{
+    height: 100%;
+    width: 30%;
+    align-content: center;
+    align-content: x;
+}
+
+.icon img{
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 65%;
+    border-radius: 100%;
+}
+
+.avalinfo{
+    width: 70%;
+    margin-top: 0;
+}
+
+.avalinfo h1{
+    font-family: medtitle;
+    font-size: 200%;
+    line-height: 0;
+}
+
+.avalinfo p{
+    font-family: 'Lucida Sans';
+    font-size: 130%;
+}
+
+.avalfogo img{
+    width: 8%;
+}
+
+.semfogo img{
+    opacity: 50%;
 }
 
 footer{

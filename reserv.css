@@ -196,7 +196,7 @@ main{
     z-index: 2;
     height: 750px;
     align-items: center;
-    transform: translate(20%);
+    transform: translate(20%) rotate(180deg);
 }
 
 .rolao1 img{
