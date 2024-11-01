@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reserv.css">
     <link rel="shortcut icon" href="imagens/minilogo.png" type="image/x-icon">
+    <script src="script.js"></script>
     <title>Toca do Dragão | Reservas</title>
 </head>
 <body>
@@ -24,7 +25,6 @@
         </header>
     </header>
     <main>
-        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
         <div class="resdiv">
             <h1 class="restitle">Reserva</h1>
         </div>
@@ -36,7 +36,7 @@
                 <div class="info1">
                     <div>
                         <h1>Nome do Aventureiro</h1>
-                        <input type="text" placeholder="Seu Nome">
+                        <input type="text" placeholder="Seu Nome" id="nome">
                     </div>
                     <div>
                         <h1>E-mail do Aventureiro</h1>
@@ -89,7 +89,7 @@
             </div>
         </section>
         <div class="bandeira">
-            <div class="botao">
+            <div class="botao" onclick="reserva()">
                 <h1>Confirmar Reserva</h1>
             </div>
         </div>
@@ -114,7 +114,13 @@
                 <p class="cr">&copy; 2024 Toca do Dragão Bar e Restaurante Todos os direitos reservados.</p>
             </div>
             <div class="devs">
-                
+                <h1>Desenvolvedores</h1>
+                <a href="https://www.instagram.com/gato.makonhah?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <div class="insta">
+                    <img src="imagens/instagram.png">
+                    <p><i>Nosso Instagram</i></p>
+                </div>
+                </a>
             </div>
         </section>
     </footer>
