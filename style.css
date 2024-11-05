@@ -1,416 +1,110 @@
 @font-face {
-    font-family: medtitle;
-    src: url(fontes/Augusta.ttf);
+    font-family: CarvingSoft;
+    src: url(fontes/MADECarvingSoftPERSONALUSE-SemiBold.otf);
 }
-
-@font-face {
-    font-family: medtxt;
-    src: url(fontes/Teutonic.ttf);
-}
-
-body{
+*{
     margin: 0;
-    padding: 0;
-    background-image: url(imagens/mesa.jpg);
-    background-size: cover;
-    background-attachment: fixed;
 }
-
-a{
-    text-decoration: none;
-    color: inherit;
+body{
+    font-family: CarvingSoft;
 }
-
 header{
-    background-color: #fbe9cc;
+    background-color: #ff86b6;
 }
-
-.logo{
-    margin-left: 50%;
-    transform: translate(-50%);
-}
-
-.logo:hover{
-    opacity: 85%;
-    transition: 0.5s ease-in-out;
-}
-
-nav{
-    background-color: #9b0d20;
-    max-height: 49.7px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 10%;
-}
-
-nav ul li {
-    display: inline;
-    color: white;
-    font-family: medtxt;
-    font-size: 150%;
-    margin: 0.8%;
-}
-
-nav ul li:hover{
-    border-bottom: 1px solid white;
-    cursor: pointer;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-.fldiv{
+main{
     text-align: center;
+    background-color: #ffdae0;
 }
-
-.fraselegal{
-    width: 100%;
-    margin-top: 7%;
-    margin-left: 50%;
-    transform: translate(-50%);
-    font-size: 700%;
-    color: white;
-    font-family: medtitle;
+.main1{
+    padding: 25px;
 }
-
-.destaque{
-    color: #c41229;
-}
-
-.perg{
-    display: flex;
-    justify-content: center;
-    height: 20%;
-    width: 100%;
-}
-
-.pergaminho{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    height: 750px;
-    align-items: center;
-    z-index: 1;
-    background-image: url(imagens/pergaminhobom4.png);
-    background-size: 100% 650px;
-    background-repeat: no-repeat;
-    background-position-y: center;
-}
-
-.pergaminho div{
-    width: 40%;
-    font-family: medtxt;
-    font-size: 225%;
-}
-
-.rolao1{
-    display: flex;
-    z-index: 2;
-    height: 750px;
-    align-items: center;
-    transform: translate(20%);
-}
-
-.rolao1 img{
-    height: 110%;
-    transform: rotate(180deg);
-}
-
-.rolao2{
-    display: flex;
-    z-index: 2;
-    height: 750px;
-    align-items: center;
-    transform: translate(-20%);
-}
-
-.rolao2 img{
-    height: 110%;
-}
-
-.fundo{
-    background-color: #fbe9cc;
-    margin-top: 15%;
-}
-
-.comidas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.comidas img{
-    margin-top: -5%;
-    margin-bottom: 4%;
-    width: 15%;
-    border-radius: 15%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 25%);
-}
-
-.comidas img:hover{
-    filter: grayscale(0%);
-    scale: 110%;
-    transition: 0.5s;
-    -webkit-mask-image: none;
-}
-
-.esptitle{
-    margin-top: 5%;
-    margin-left: 50%;
-    transform: translate(-50%);
-    font-family: medtitle;
-    font-size: 500%;
-    border-bottom: 5px solid #9b0d20;
-    text-align: center;
-    width: 90%;
-}
-
-.especialidades{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.especialidades div{
-    width: 40%;
-}
-
-.churras{
-    margin-left: 5%;
-    text-align: center;
-}
-
-.churras h1{
-    font-family: medtitle;
-    font-size: 400%;
-}
-
-.churras p{
-    font-family: medtxt;
-    font-size: 300%;
-}
-
-.carnes{
-    margin-top: 4%;
-    margin-right: 10%;
-}
-
-.drinks{
-    margin-top: 4%;
-    margin-left: 5%;
-}
-
-.mix{
-    margin-right: 5%;
-    text-align: center;
-}
-
-.mix h1{
-    font-family: medtitle;
-    font-size: 400%;
-}
-
-.mix p{
-    font-family: medtxt;
-    font-size: 300%;
-}
-
-.bandeiras{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    margin-top: 10%;
-}
-
-.botoes{
-    width: 40%;
-}
-
-.botoes div{
-    background-image: url(imagens/bandeira.png);
-    background-size: cover;
-    width: 100%;
-    height: 255px;
-    min-width: 100%;
-    text-align: center;
-    align-content: center;
-    color: white;
-    font-family: medtitle;
-    font-size: 250%;
-}
-
-.botoes div:hover{
-    filter: brightness(120%);
-    scale: 110%;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.dragao{
-    width: 40%;
-    text-align: center;
-}
-
-.dragao img{
-    scale: 110%;
-}
-
-.loctitle{
-    margin-top: 10%;
-    margin-left: 50%;
-    margin-bottom: 0;
-    transform: translate(-50%);
-    font-family: medtitle;
-    font-size: 500%;
-    text-align: center;
-}
-
-.locmaps{
-    width: 100%;
-    height: 500px;
-    border-top: 5px solid #9b0d20;
-    border-bottom: 5px solid #9b0d20;
-    border-right: 0;
-    border-left: 0;
-}
-
-.avaltitle{
-    font-family: medtitle;
-    color: white;
-    margin-left: 50%;
-    transform: translate(-50%);
-    font-family: medtitle;
-    font-size: 500%;
-    text-align: center;
-    margin-top: 5%;
-}
-
-.avalcards{
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin-top: 5%;
-    margin-bottom: 8%;
-    margin-left: 50%;
-    transform: translate(-50%);
-}
-
-.aval{
-    background-color: #fbe9cc;
-    width: 30%;
-    height: 180px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    border-radius: 50px
-}
-
-.icon{
-    height: 100%;
-    width: 30%;
-    align-content: center;
-    align-content: x;
-}
-
-.icon img{
-    margin-left: 50%;
-    transform: translate(-50%);
-    width: 65%;
-    border-radius: 100%;
-}
-
-.avalinfo{
-    width: 70%;
-    margin-top: 0;
-}
-
-.avalinfo h1{
-    font-family: medtitle;
-    font-size: 200%;
-    line-height: 0;
-}
-
-.avalinfo p{
-    font-family: 'Lucida Sans';
-    font-size: 130%;
-}
-
-.avalfogo img{
-    width: 8%;
-}
-
-.semfogo img{
-    opacity: 50%;
-}
-
 footer{
-    color: white;
-    background-color: #9b0d20;
-    font-family: 'Lucida Sans';
+    text-align: center;
+    background-color: #ff86b6;
+}
+input{
+    width: 300px;
+    padding: 25px;
+    font-size: 25px;
+}
+button{
+    background-color: #ff86b6;
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+button:hover{
+    cursor: pointer;
+    transition: 0.25s;
+    background-color: #b6285e;
+}
+.redbtn{
+    width: 100px;
+}
+.redbtn:hover{
+    filter: grayscale(50%);
+    transform: scale(0.95);
+}
+img{
+    width: 400px;
+}
+.rchrd_prc{
+    width: 200px;
 }
 
-.foofighters{
+.box_mae{
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
-    padding: 2.5%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-.contatos{
-    width: 30%;
+.card{
+    padding: 20px;
+    background-color: #ff86b6;
+    margin: 20px;
+    border: #b6285e;
+    border-style: dotted;
+    width: 800px;
+    height: 800px;
     text-align: center;
 }
 
-.contatos h1{
-    font-size: 200%;
+p{
+    font-size: 25px;
+    color: white;
 }
 
-.contatos img{
-    width: 8%;
+h1{
+    font-size: 30px;
+    color: #b6285e;
 }
 
-.insta:hover{
-    scale: 110%;
-    cursor: pointer;
-    transition: 0.5s;
+.tlte{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
-.zap:hover{
-    scale: 110%;
-    cursor: pointer;
-    transition: 0.5s;
+#tab{
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+tr{
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #ff86b6;
 }
 
-.direitos{
-    width: 30%;
-    text-align: center;
+.box_mae1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.direitos img{
-    width: 50%;
-}
-
-.devs{
-    width: 30%;
-    text-align: center;
-}
-
-.devs h1{
-    font-size: 200%;
-}
-
-.devs img{
-    width: 8%;
+.card1{
+    margin: 60px;
+    width: 400px;
+    height: 400px;
 }
