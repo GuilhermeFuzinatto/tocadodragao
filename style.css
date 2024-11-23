@@ -258,6 +258,13 @@ nav ul li a{
     transition: 0.5s;
 }
 
+.botoes h1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .dragao{
     width: 40%;
     text-align: center;
