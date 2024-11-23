@@ -3,42 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela Price by 2ºC</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="shortcut icon" href="imagens/minilogo.png" type="image/x-icon">
+    <title>Toca do Dragão | Bar e Restaurante</title>
 </head>
-
 <body>
     <header>
-        <a href="inco.html"><img class="redbtn" src="Imagens/redbtn.png"></a>
-        <h1 class="tlte">CALCULADORA DE AMORTIZAÇÃO PRICE</h1>
+        <a href="index.html"><img src="imagens/logo.png" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="#esp">Especialidades</a></li>
+                <li><a href="#loc">Localização</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="reserv.html">Reservas</a></li>
+                <li><a href="#ava">Avaliações</a></li>
+                <li><a href="#ctt">Contatos</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="main1">
-        <section class="box_mae1">
-            <div class="card1">
-                <input type="text" placeholder="Saldo Devedor" id="v"> <br> <br>
-                <input type="text" placeholder="Taxa de Juros (Decimal)" id="i"> <br> <br>
-                <input type="text" placeholder="Quantidade de Parcelas" id="n"> <br> <br>
-                <button onclick="price()">Calcule!</button>
+    <main>
+        <div class="fldiv">
+            <h1 class="fraselegal">A <span class="destaque">Verdadeira</span><br>Experiência Medieval</h1>
+        </div>
+        <section class="perg">
+            <div class="rolao1">
+                <img src="imagens/rolao2.png">
             </div>
-            <div class="card1">
-                <table id="tab">
-                    <thead>
-                        <tr>
-                            <th>Parcela</th>
-                            <th>Prestação</th>
-                            <th>Juros</th>
-                            <th>Amortização</th>
-                            <th>Saldo Devedor</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
+            <div class="pergaminho">
+                <div>
+                    <p class="bnv">
+                        Bem-vindo, bravo aventureiro, à Toca do Dragão!
+                        Entre e sinta-se em casa, onde as chamas do dragão aquecem o salão e os
+                        aromas dos banquetes preenchem o ar. Nossa taverna é um refúgio para
+                        heróis, bardos, magos, e todos aqueles em busca de boa comida, aventuras
+                        épicas, e momentos inesquecíveis. Aqui, cada prato conta uma história e
+                        cada brinde celebra a jornada. <br><br> Prepare-se para explorar o que há
+                        de mais delicioso no reino e deixe sua
+                        aventura começar!
+                    </p>
+                </div>
+                <div class="hst">
+                    <p>A Toca do Dragão nasceu de uma ideia que ganhou vida em sala de aula, movida pela
+                    paixão de sete amigos – Brunno Malta, Isabelly Vitória, Nathalia Bilibio, Leonardo
+                    Rodrigues, Cezar K., Israel Aecius e Vinicius Lianes. Sob a mentoria do professor de
+                    Administração Antonio Daffara Neto, transformamos nossa visão em realidade: um
+                    restaurante inspirado no mundo de fantasia medieval, onde cada prato é uma
+                    aventura e cada visitante é tratado como um herói.</p>
+                </div>
+            </div>
+            <div class="rolao2">
+                <img src="imagens/rolao2.png">
             </div>
         </section>
+        <section class="fundo">
+            <div class="comidas">
+                <img src="imagens/limonation.jpg">
+                <img src="imagens/ribs.jpg">
+                <img src="imagens/breja.jpg">
+                <img src="imagens/burguer.jpg">
+                <img src="imagens/milk.jpg">
+            </div>
+            <div class="esp" id="esp">
+                <h1 class="esptitle">Especialidades</h1>
+                <div class="especialidades">
+                    <div class="churras">
+                        <h1>Churrasco Rústico</h1>
+                        <p>Oferecemos um churrasco rústico, com carnes nobres grelhadas
+                        e temperos tradicionais. As carnes são preparadas com técnicas de defumação e 
+                        servidas com acompanhamentos robustos,proporcionando uma experiência autêntica 
+                        e saborosa.</p>
+                    </div>
+                    <div class="carnes">
+                        <img src="imagens/carnes.png">
+                    </div>
+                    <div class="drinks">
+                        <img src="imagens/drinks.png">
+                    </div>
+                    <div class="mix">
+                        <h1>Mixologia</h1>
+                        <p>Na Toca do Dragão, a mixologia é destaque com coquetéis exclusivos,
+                        elaborados com ingredientes frescos e artesanais. Drinks inovadores, 
+                        alcoólicos e não alcoólicos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bandeiras">
+                <div class="botoes">
+                    <a href="cardapio.html">
+                    <div class="vcar">
+                        <h1>Ver Cardápio</h1>
+                    </div>
+                    </a>
+                    <a href="reserv.html">
+                    <div class="fres">
+                        <h1>Fazer Reserva</h1>
+                    </div>
+                    </a>
+                </div>
+                <div class="dragao">
+                    <img src="imagens/olho.png">
+                </div>
+            </div>
+            <h1 class="loctitle" id="loc">Nossa Localização</h1>
+        </section>
+        <iframe class="locmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1070.240834804694!2d-54.58504239187083!3d-25.543482017894412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6904b1915a44f%3A0x5ef21b1ec3b90a91!2sR.%20Alm.%20Barroso%2C%201336%20-%20Centro%2C%20Foz%20do%20Igua%C3%A7u%20-%20PR%2C%2085851-010!5e0!3m2!1spt-BR!2sbr!4v1729557310297!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="avaliacoes" id="ava">
+            <h1 class="avaltitle">Avaliações</h1>
+            <div class="avalcards" id="fda">
+                <div class="aval">
+                    <div class="icon">
+                        <img src="imagens/senshi.jpg">
+                    </div>
+                    <div class="avalinfo">
+                        <h1>Senshi</h1>
+                        <p>Com certeza um dos melhores restaurantes que já visitei, a comida tava perfeita.</p>
+                        <div class="avalfogo">
+                            <img src="imagens/fogo.png">
+                            <img src="imagens/fogo.png">
+                            <img src="imagens/fogo.png">
+                            <img src="imagens/fogo.png">
+                            <img src="imagens/fogo.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="aval">
+                    <div class="icon">
+                        <img src="imagens/daenerys.jpg">
+                    </div>
+                    <div class="avalinfo">
+                        <h1>Daenerys</h1>
+                        <p>Os drinks estavam uma delícia! Achei a decoração maravilhosa, amooo dragões!</p>
+                        <div class="avalfogo">
+                            <img src="imagens/fogo.png">
+                            <img src="imagens/fogo.png">
+                            <img src="imagens/fogo.png">
+                            <img src="imagens/fogo.png">
+                            <img src="imagens/fogo.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="aval">
+                    <div class="icon">
+                        <img src="imagens/dandara.jpeg">
+                    </div>
+                    <div class="avalinfo">
+                        <h1>Dandara</h1>
+                        <p>Os funcionários são muito simpáticos, mas perdi na queda de braço com o barman.</p>
+                        <div class="avalfogo">
+                            <img src="imagens/fogo.png">
+                            <img src="imagens/fogo.png">
+                            <img src="imagens/fogo.png">
+                            <img src="imagens/fogo.png">
+                            <span class="semfogo">
+                            <img src="imagens/fogo.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
     </main>
     <footer>
-        <img src="Imagens/smartlutherkings-removebg-preview.png" alt="">
+        <section class="foofighters">
+            <div class="contatos" id="ctt">
+                <h1>Contatos</h1>
+                <a href="https://www.instagram.com/tocadodragaobar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <div class="insta">
+                    <img src="imagens/instagram.png">
+                    <p><i>tocadodragaobar</i></p>
+                </div>
+                </a>
+                <div class="zap">
+                    <img src="imagens/zapzap.png">
+                    <p><i>+55 45 998250329</i></p>
+                </div>
+            </div>
+            <div class="direitos">
+                <img src="imagens/logo2.png">
+                <p class="cr">&copy; 2024 Toca do Dragão Bar e Restaurante Todos os direitos reservados.</p>
+            </div>
+            <div class="devs">
+                <h1>Desenvolvedores</h1>
+                <a href="https://www.instagram.com/gato.makonhah?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <div class="insta">
+                    <img src="imagens/instagram.png">
+                    <p><i>Nosso Instagram</i></p>
+                </div>
+                </a>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
